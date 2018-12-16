@@ -1,0 +1,26 @@
+// Only the target frameworks that are used in projects.
+// If you change the target framework of the projects then you need to run paket install again.
+framework: netstandard20, netcoreapp22, net472
+
+source https://informatievlaanderen.myget.org/F/nuget-mirror/api/v3/index.json username: "%MYGET_FEED_USER%" password: "%MYGET_FEED_PASS%" authtype: "basic"
+source https://informatievlaanderen.myget.org/F/basisregisters/api/v3/index.json username: "%MYGET_FEED_USER%" password: "%MYGET_FEED_PASS%" authtype: "basic"
+
+// DOTNETCORE ISSUES
+nuget Microsoft.NETCore.App 2.2.0
+
+// TEST STUFF
+nuget Microsoft.NET.Test.Sdk 15.9.0
+nuget xunit 2.4.1
+nuget xunit.runner.visualstudio 2.4.1
+nuget Shouldly 3.0.2
+
+clitool dotnet-xunit 2.3.1
+
+// VBR STUFF
+nuget Be.Vlaanderen.Basisregisters.Build.Pipeline ~> 1.0
+
+// BUILD STUFF
+nuget FAKE 4.64.13 // Don't update to v5!
+nuget SourceLink.Embed.AllSourceFiles 2.8.3 copy_local: true
+nuget SourceLink.Copy.PdbFiles 2.8.3 copy_local: true
+clitool dotnet-sourcelink 2.8.3
