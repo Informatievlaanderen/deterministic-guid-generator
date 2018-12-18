@@ -1,8 +1,7 @@
 RESTRICTION: || (== net472) (== netcoreapp2.2) (== netstandard2.0)
 NUGET
-  remote: https://informatievlaanderen.myget.org/F/basisregisters/api/v3/index.json
-    Be.Vlaanderen.Basisregisters.Build.Pipeline (1.0.0)
   remote: https://informatievlaanderen.myget.org/F/nuget-mirror/api/v3/index.json
+    Be.Vlaanderen.Basisregisters.Build.Pipeline (1.1.2)
     dotnet-sourcelink (2.8.3) - clitool: true
       Microsoft.Extensions.CommandLineUtils (>= 1.1.1) - restriction: || (&& (== net472) (>= netcoreapp1.0)) (== netcoreapp2.2) (&& (== netstandard2.0) (>= netcoreapp1.0))
       Microsoft.NETCore.App (>= 2.0) - restriction: || (&& (== net472) (>= netcoreapp2.0)) (== netcoreapp2.2) (&& (== netstandard2.0) (>= netcoreapp2.0))
@@ -40,10 +39,10 @@ NUGET
       Microsoft.NETCore.Platforms (>= 2.2) - restriction: || (&& (== net472) (>= netcoreapp2.2)) (== netcoreapp2.2) (&& (== netstandard2.0) (>= netcoreapp2.2))
       Microsoft.NETCore.Targets (>= 2.0) - restriction: || (&& (== net472) (>= netcoreapp2.2)) (== netcoreapp2.2) (&& (== netstandard2.0) (>= netcoreapp2.2))
       NETStandard.Library (>= 2.0.3) - restriction: || (&& (== net472) (>= netcoreapp2.2)) (== netcoreapp2.2) (&& (== netstandard2.0) (>= netcoreapp2.2))
-    Microsoft.NETCore.DotNetAppHost (2.2.0) - restriction: || (&& (== net472) (>= netcoreapp2.2)) (== netcoreapp2.2) (&& (== netstandard2.0) (>= netcoreapp2.2))
-    Microsoft.NETCore.DotNetHostPolicy (2.2.0) - restriction: || (&& (== net472) (>= netcoreapp2.2)) (== netcoreapp2.2) (&& (== netstandard2.0) (>= netcoreapp2.2))
+    Microsoft.NETCore.DotNetAppHost (2.2.0)
+    Microsoft.NETCore.DotNetHostPolicy (2.2.0)
       Microsoft.NETCore.DotNetHostResolver (>= 2.2)
-    Microsoft.NETCore.DotNetHostResolver (2.2.0) - restriction: || (&& (== net472) (>= netcoreapp2.2)) (== netcoreapp2.2) (&& (== netstandard2.0) (>= netcoreapp2.2))
+    Microsoft.NETCore.DotNetHostResolver (2.2.0)
       Microsoft.NETCore.DotNetAppHost (>= 2.2)
     Microsoft.NETCore.Platforms (2.2.0) - restriction: || (&& (== net472) (>= dnxcore50)) (&& (== net472) (< net40)) (&& (== net472) (>= netcoreapp2.2)) (== netcoreapp2.2) (== netstandard2.0)
     Microsoft.NETCore.Targets (2.1.0) - restriction: || (&& (== net472) (>= dnxcore50)) (&& (== net472) (< net40)) (&& (== net472) (>= netcoreapp2.2)) (== netcoreapp2.2) (== netstandard2.0)

@@ -1,3 +1,5 @@
+Microsoft.NETCore.App
+
 xunit
 dotnet-xunit
 xunit.runner.visualstudio

@@ -132,20 +132,11 @@
     "publish": [
       {
         "path": "@semantic-release/github",
-        "assets": [
-          {
-            "path": "dist/Be.Vlaanderen.Basisregisters.Generators.Guid.Deterministic/*.nupkg",
-            "label": "NuGet Package"
-          }
-        ]
+        "assets": [{ "path": "dist/**/*.nupkg" } ]
       },
       {
         "path": "@semantic-release/exec",
-        "cmd": "node packages/Be.Vlaanderen.Basisregisters.Build.Pipeline/Content/ci-myget.js dist/Be.Vlaanderen.Basisregisters.Generators.Guid.Deterministic/Be.Vlaanderen.Basisregisters.Generators.Guid.Deterministic.${nextRelease.version}.nupkg"
-      },
-      {
-        "path": "@semantic-release/exec",
-        "cmd": "./packages/Be.Vlaanderen.Basisregisters.Build.Pipeline/Content/ci-bitbucket.sh dist/Be.Vlaanderen.Basisregisters.Generators.Guid.Deterministic/Be.Vlaanderen.Basisregisters.Generators.Guid.Deterministic.${nextRelease.version}.nupkg"
+        "cmd": "node packages/Be.Vlaanderen.Basisregisters.Build.Pipeline/Content/ci-nuget.js dist/Be.Vlaanderen.Basisregisters.Generators.Guid.Deterministic/Be.Vlaanderen.Basisregisters.Generators.Guid.Deterministic.${nextRelease.version}.nupkg"
       },
       {
         "path": "@semantic-release/exec",

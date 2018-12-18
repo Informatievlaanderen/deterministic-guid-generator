@@ -7,6 +7,9 @@ source https://informatievlaanderen.myget.org/F/basisregisters/api/v3/index.json
 
 // DOTNETCORE ISSUES
 nuget Microsoft.NETCore.App 2.2.0
+nuget Microsoft.NETCore.DotNetAppHost 2.2.0
+nuget Microsoft.NETCore.DotNetHostResolver 2.2.0
+nuget Microsoft.NETCore.DotNetHostPolicy 2.2.0
 
 // TEST STUFF
 nuget Microsoft.NET.Test.Sdk 15.9.0
@@ -17,7 +20,7 @@ nuget Shouldly 3.0.2
 clitool dotnet-xunit 2.3.1
 
 // VBR STUFF
-nuget Be.Vlaanderen.Basisregisters.Build.Pipeline ~> 1.0
+nuget Be.Vlaanderen.Basisregisters.Build.Pipeline ~> 1.1
 
 // BUILD STUFF
 nuget FAKE 4.64.13 // Don't update to v5!
