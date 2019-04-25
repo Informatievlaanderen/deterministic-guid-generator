@@ -7,14 +7,15 @@ readable messages** that are easy to follow when looking through the **project h
 we use the git commit messages to **generate the change log**.
 
 The commit message formatting can be added using a typical git workflow or through the use of a CLI
-wizard ([Commitizen](https://github.com/commitizen/cz-cli)). To use the wizard, run `yarn run commit`
+wizard ([Commitizen](https://github.com/commitizen/cz-cli)). To use the wizard, run `npm run commit`
 in your terminal after staging your changes in git.
 
 ### Commit Message Format
+
 Each commit message consists of a **header**, a **body** and a **footer**.  The header has a special
 format that includes a **type**, a **scope** and a **subject**:
 
-```
+```text
 <type>(<scope>): <subject>
 <BLANK LINE>
 <body>
@@ -28,13 +29,15 @@ Any line of the commit message cannot be longer 100 characters! This allows the 
 to read in various git tools.
 
 ### Revert
-If the commit reverts a previous commit, it should begin with `revert: `, followed by the header
+
+If the commit reverts a previous commit, it should begin with `revert:`, followed by the header
 of the reverted commit.
 In the body it should say: `This reverts commit <hash>.`, where the hash is the SHA of the commit
 being reverted.
-A commit with this format is automatically created by the [`git revert`][git-revert] command.
+A commit with this format is automatically created by the `git revert` command.
 
 ### Type
+
 Must be one of the following:
 
 * **feat**: A new feature
@@ -50,12 +53,13 @@ Must be one of the following:
 * **revert**: Reverts a previous commit
 
 ### Scope
-The scope could be anything specifying place of the commit change. For example `core`,
-`README`, `ui`, etc...
+
+The scope could be anything specifying place of the commit change. For example `core`, `README`, `ui`, etc...
 
 You can use `*` when the change affects more than a single scope.
 
 ### Subject
+
 The subject contains succinct description of the change:
 
 * use the imperative, present tense: "change" not "changed" nor "changes"
@@ -63,14 +67,16 @@ The subject contains succinct description of the change:
 * no dot (.) at the end
 
 ### Body
+
 Just as in the **subject**, use the imperative, present tense: "change" not "changed" nor "changes".
 The body should include the motivation for the change and contrast this with previous behavior.
 
 ### Footer
+
 The footer should contain any information about **Breaking Changes** and is also the place to
-[reference Jira issues that this commit closes][https://confluence.atlassian.com/bitbucket/processing-jira-software-issues-with-smart-commit-messages-298979931.html].
+[reference Jira issues that this commit closes](https://confluence.atlassian.com/bitbucket/processing-jira-software-issues-with-smart-commit-messages-298979931.html).
 
 **Breaking Changes** should start with the word `BREAKING CHANGE:` with a space or two newlines.
 The rest of the commit message is then used for this.
 
-A detailed explanation can be found in this [document][https://docs.google.com/document/d/1FL1N2tXY3B7rKAYEsson8cmERao5x73Z4aaSsrhjpFI/edit?usp=sharing].
+A detailed explanation can be found in this [document](https://docs.google.com/document/d/1FL1N2tXY3B7rKAYEsson8cmERao5x73Z4aaSsrhjpFI/edit?usp=sharing).

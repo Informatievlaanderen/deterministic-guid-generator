@@ -1,8 +1,6 @@
 Microsoft.NETCore.App
 
 xunit
-dotnet-xunit
 xunit.runner.visualstudio
 Microsoft.NET.Test.Sdk
 Shouldly
-dotnet-sourcelink

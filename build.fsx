@@ -10,10 +10,6 @@ let build = buildSolution assemblyVersionNumber
 let publish = publishSolution assemblyVersionNumber
 let pack = packSolution nugetVersionNumber
 
-Target "Clean" (fun _ ->
-  CleanDir buildDir
-)
-
 // Library ------------------------------------------------------------------------
 
 Target "Lib_Build" (fun _ -> build "Be.Vlaanderen.Basisregisters.Generators.Guid.Deterministic")
