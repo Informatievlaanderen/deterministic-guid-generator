@@ -1,3 +1,5 @@
+## [1.0.4](https://github.com/informatievlaanderen/deterministic-guid-generator/compare/v1.0.3...v1.0.4) (2019-04-25)
+
 ## [1.0.3](https://github.com/informatievlaanderen/deterministic-guid-generator/compare/v1.0.2...v1.0.3) (2019-04-25)
 
 ## [1.0.2](https://github.com/informatievlaanderen/deterministic-guid-generator/compare/v1.0.1...v1.0.2) (2018-12-18)
