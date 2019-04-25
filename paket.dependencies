@@ -16,7 +16,7 @@ nuget Microsoft.NETCore.DotNetHostPolicy 2.2.4
 nuget NETStandard.Library 2.0.3
 
 // VBR STUFF
-nuget Be.Vlaanderen.Basisregisters.Build.Pipeline ~> 1.5
+nuget Be.Vlaanderen.Basisregisters.Build.Pipeline ~> 1.6
 
 // TEST STUFF
 nuget Microsoft.NET.Test.Sdk 16.0.1
