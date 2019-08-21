@@ -9,17 +9,17 @@ source https://api.nuget.org/v3/index.json
 // source https://informatievlaanderen.myget.org/F/nuget-mirror/api/v3/index.json username: "%MYGET_FEED_USER%" password: "%MYGET_FEED_PASS%" authtype: "basic"
 
 // DOTNETCORE ISSUES
-nuget Microsoft.NETCore.App 2.2.4
-nuget Microsoft.NETCore.DotNetAppHost 2.2.4
-nuget Microsoft.NETCore.DotNetHostResolver 2.2.4
-nuget Microsoft.NETCore.DotNetHostPolicy 2.2.4
+nuget Microsoft.NETCore.App 2.2.6
+nuget Microsoft.NETCore.DotNetAppHost 2.2.6
+nuget Microsoft.NETCore.DotNetHostResolver 2.2.6
+nuget Microsoft.NETCore.DotNetHostPolicy 2.2.6
 nuget NETStandard.Library 2.0.3
 
 // VBR STUFF
-nuget Be.Vlaanderen.Basisregisters.Build.Pipeline ~> 1.6
+nuget Be.Vlaanderen.Basisregisters.Build.Pipeline ~> 1.7
 
 // TEST STUFF
-nuget Microsoft.NET.Test.Sdk 16.0.1
+nuget Microsoft.NET.Test.Sdk 16.2.0
 nuget xunit 2.4.1
 nuget xunit.runner.visualstudio 2.4.1
 nuget Shouldly 3.0.2
