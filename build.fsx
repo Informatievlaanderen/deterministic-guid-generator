@@ -1,6 +1,14 @@
+#r "paket:
+version 5.226.0
+framework: netstandard20
+source https://api.nuget.org/v3/index.json
+nuget Be.Vlaanderen.Basisregisters.Build.Pipeline 2.0.1 //"
+
 #load "packages/Be.Vlaanderen.Basisregisters.Build.Pipeline/Content/build-generic.fsx"
 
-open Fake
+open Fake.Core
+open Fake.Core.TargetOperators
+open Fake.IO.FileSystemOperators
 open ``Build-generic``
 
 let assemblyVersionNumber = (sprintf "%s.0")
@@ -12,19 +20,19 @@ let pack = packSolution nugetVersionNumber
 
 // Library ------------------------------------------------------------------------
 
-Target "Lib_Build" (fun _ -> build "Be.Vlaanderen.Basisregisters.Generators.Guid.Deterministic")
-Target "Lib_Test" (fun _ -> [ "test" @@ "Be.Vlaanderen.Basisregisters.Generators.Guid.Deterministic.Tests" ] |> List.iter testWithDotNet)
+Target.create "Lib_Build" (fun _ -> build "Be.Vlaanderen.Basisregisters.Generators.Guid.Deterministic")
+Target.create "Lib_Test" (fun _ -> [ "test" @@ "Be.Vlaanderen.Basisregisters.Generators.Guid.Deterministic.Tests" ] |> List.iter testWithDotNet)
 
-Target "Lib_Publish" (fun _ -> publish "Be.Vlaanderen.Basisregisters.Generators.Guid.Deterministic")
-Target "Lib_Pack" (fun _ -> pack "Be.Vlaanderen.Basisregisters.Generators.Guid.Deterministic")
+Target.create "Lib_Publish" (fun _ -> publish "Be.Vlaanderen.Basisregisters.Generators.Guid.Deterministic")
+Target.create "Lib_Pack" (fun _ -> pack "Be.Vlaanderen.Basisregisters.Generators.Guid.Deterministic")
 
 // --------------------------------------------------------------------------------
 
-Target "PublishLibrary" DoNothing
-Target "PublishAll" DoNothing
+Target.create "PublishLibrary" ignore
+Target.create "PublishAll" ignore
 
-Target "PackageMyGet" DoNothing
-Target "PackageAll" DoNothing
+Target.create "PackageMyGet" ignore
+Target.create "PackageAll" ignore
 
 // Publish ends up with artifacts in the build folder
 "DotNetCli" ==> "Clean" ==> "Restore" ==> "Lib_Build" ==> "Lib_Test" ==> "Lib_Publish" ==> "PublishLibrary"
@@ -34,4 +42,4 @@ Target "PackageAll" DoNothing
 "PublishLibrary" ==> "Lib_Pack" ==> "PackageMyGet"
 "PackageMyGet" ==> "PackageAll"
 
-RunTargetOrDefault "Lib_Build"
+Target.runOrDefault "Lib_Build"
