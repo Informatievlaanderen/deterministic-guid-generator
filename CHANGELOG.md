@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/informatievlaanderen/deterministic-guid-generator/compare/v1.1.0...v1.1.1) (2019-10-28)
+
+
+### Bug Fixes
+
+* upgrade build tools, move to fake 5 ([3e47789](https://github.com/informatievlaanderen/deterministic-guid-generator/commit/3e47789))
+
 # [1.1.0](https://github.com/informatievlaanderen/deterministic-guid-generator/compare/v1.0.4...v1.1.0) (2019-08-21)
 
 
