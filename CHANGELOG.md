@@ -1,3 +1,10 @@
+# [2.2.0](https://github.com/informatievlaanderen/deterministic-guid-generator/compare/v2.1.0...v2.2.0) (2020-01-31)
+
+
+### Features
+
+* upgrade netcoreapp31 and dependencies ([f897afa](https://github.com/informatievlaanderen/deterministic-guid-generator/commit/f897afa0ad6565542439eca49e55f6a737ddb784))
+
 # [2.1.0](https://github.com/informatievlaanderen/deterministic-guid-generator/compare/v2.0.0...v2.1.0) (2019-12-15)
 
 
