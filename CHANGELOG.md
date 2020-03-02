@@ -1,3 +1,10 @@
+## [2.2.1](https://github.com/informatievlaanderen/deterministic-guid-generator/compare/v2.2.0...v2.2.1) (2020-03-02)
+
+
+### Bug Fixes
+
+* bump netcore to 3.1.2 ([2b35d2c](https://github.com/informatievlaanderen/deterministic-guid-generator/commit/2b35d2c867287b8f48f3c15d815ec4f0bcf054b5))
+
 # [2.2.0](https://github.com/informatievlaanderen/deterministic-guid-generator/compare/v2.1.0...v2.2.0) (2020-01-31)
 
 
