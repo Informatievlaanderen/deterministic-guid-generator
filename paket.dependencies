@@ -9,10 +9,10 @@ source https://api.nuget.org/v3/index.json
 // source https://informatievlaanderen.myget.org/F/nuget-mirror/api/v3/index.json username: "%MYGET_FEED_USER%" password: "%MYGET_FEED_PASS%" authtype: "basic"
 
 // VBR STUFF
-nuget Be.Vlaanderen.Basisregisters.Build.Pipeline 3.3.0
+nuget Be.Vlaanderen.Basisregisters.Build.Pipeline 3.3.2
 
 // TEST STUFF
-nuget Microsoft.NET.Test.Sdk 16.4.0
+nuget Microsoft.NET.Test.Sdk 16.5.0
 nuget xunit 2.4.1
 nuget xunit.runner.visualstudio 2.4.1
 nuget Shouldly 3.0.2
