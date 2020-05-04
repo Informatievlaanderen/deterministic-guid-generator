@@ -1,4 +1,4 @@
-# Be.Vlaanderen.Basisregisters.Generators.Deterministic
+# Be.Vlaanderen.Basisregisters.Generators.Deterministic [![Build Status](https://github.com/Informatievlaanderen/deterministic-guid-generator/workflows/CI/badge.svg)](https://github.com/Informatievlaanderen/deterministic-guid-generator/actions)
 
 Create a deterministic GUID based on namespace Guid, a string and an optional version.
 
