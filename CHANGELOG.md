@@ -1,3 +1,10 @@
+## [2.2.2](https://github.com/informatievlaanderen/deterministic-guid-generator/compare/v2.2.1...v2.2.2) (2020-05-04)
+
+
+### Bug Fixes
+
+* move to GH-actions ([#4](https://github.com/informatievlaanderen/deterministic-guid-generator/issues/4)) ([9741bd3](https://github.com/informatievlaanderen/deterministic-guid-generator/commit/9741bd34b8a7f23ca224e8ce3ff9c5f57eb91a78))
+
 ## [2.2.1](https://github.com/informatievlaanderen/deterministic-guid-generator/compare/v2.2.0...v2.2.1) (2020-03-02)
 
 
