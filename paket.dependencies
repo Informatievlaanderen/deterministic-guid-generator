@@ -2,7 +2,7 @@ framework: netcoreapp31
 source https://api.nuget.org/v3/index.json
 
 // VBR STUFF
-nuget Be.Vlaanderen.Basisregisters.Build.Pipeline 4.0.6
+nuget Be.Vlaanderen.Basisregisters.Build.Pipeline 4.1.0
 
 // TEST STUFF
 nuget Microsoft.NET.Test.Sdk 16.6.1
