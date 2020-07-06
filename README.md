@@ -4,7 +4,7 @@
 
 Create a deterministic GUID based on a namespace, a string and an optional version.
 
-Although a new GUID is typically created in order to provide a unique ID, there are occasions when it’s useful for two different systems to generate the same GUID independently. [RFC 4122](https://www.ietf.org/rfc/rfc4122.txt) provides an algorithm for deterministic creation of a GUID based on a namespace ID (itself a GUID) and a name within that namespace. These name- based GUIDs will never collide with GUIDs from other sources (e.g., [Guid.NewGuid](https://docs.microsoft.com/en-us/dotnet/api/system.guid.newguid?redirectedfrom=MSDN&view=netcore-3.1#System_Guid_NewGuid)), and have a very (very) small chance of colliding with other name-based GUIDs. As per section 4.3:
+Although a new GUID is typically created in order to provide a unique ID, there are occasions when it’s useful for two different systems to generate the same GUID independently. [RFC 4122](https://www.ietf.org/rfc/rfc4122.txt) provides an algorithm for deterministic creation of a GUID based on a namespace ID (itself a GUID) and a name within that namespace. These name-based GUIDs will never collide with GUIDs from other sources (e.g., [Guid.NewGuid](https://docs.microsoft.com/en-us/dotnet/api/system.guid.newguid?redirectedfrom=MSDN&view=netcore-3.1#System_Guid_NewGuid)), and have a very (very) small chance of colliding with other name-based GUIDs. As per section 4.3:
 
 * The UUIDs generated at different times from the same name in the same namespace MUST be equal.
 * The UUIDs generated from two different names in the same namespace should be different (with very high probability).
