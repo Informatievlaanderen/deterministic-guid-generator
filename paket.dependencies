@@ -2,12 +2,12 @@ framework: netcoreapp31
 source https://api.nuget.org/v3/index.json
 
 // VBR STUFF
-nuget Be.Vlaanderen.Basisregisters.Build.Pipeline 4.2.2
+nuget Be.Vlaanderen.Basisregisters.Build.Pipeline 4.2.3
 
 // TEST STUFF
-nuget Microsoft.NET.Test.Sdk 16.6.1
+nuget Microsoft.NET.Test.Sdk 16.7.1
 nuget xunit 2.4.1
-nuget xunit.runner.visualstudio 2.4.2
+nuget xunit.runner.visualstudio 2.4.3
 nuget Shouldly 3.0.2
 
 // BUILD STUFF
