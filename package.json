@@ -24,7 +24,7 @@
     "cz-conventional-changelog": "3.3.0",
     "form-data": "3.0.0",
     "husky": "4.3.0",
-    "merge": "1.2.1",
+    "merge": "2.1.0",
     "semantic-release": "17.1.2",
     "lodash": "4.17.20"
   },
