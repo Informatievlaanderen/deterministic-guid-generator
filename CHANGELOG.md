@@ -1,3 +1,10 @@
+## [2.2.7](https://github.com/informatievlaanderen/deterministic-guid-generator/compare/v2.2.6...v2.2.7) (2020-11-19)
+
+
+### Bug Fixes
+
+* remove set-env usage in gh-actions ([3b6b532](https://github.com/informatievlaanderen/deterministic-guid-generator/commit/3b6b532fa7abde08982497b82409f61b8469ad6d))
+
 ## [2.2.6](https://github.com/informatievlaanderen/deterministic-guid-generator/compare/v2.2.5...v2.2.6) (2020-09-21)
 
 
