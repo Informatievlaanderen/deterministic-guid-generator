@@ -1,6 +1,6 @@
 {
   "name": "deterministic-guid-generator",
-  "version": "2.2.8",
+  "version": "2.2.9",
   "description": "Create a deterministic GUID based on namespace Guid, a string and an optional version.",
   "author": "Basisregisters Vlaanderen",
   "license": "MIT",
