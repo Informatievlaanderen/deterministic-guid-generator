@@ -18,5 +18,5 @@ dependencies
   framework: net5.0
 
 files
-  bin\Release\net5.0\linux-x64\Be.Vlaanderen.Basisregisters.Generators.Guid.Deterministic.dll => lib\net5.0
-  bin\Release\net5.0\linux-x64\Be.Vlaanderen.Basisregisters.Generators.Guid.Deterministic.pdb => lib\net5.0
+  bin\Release\net5.0\Be.Vlaanderen.Basisregisters.Generators.Guid.Deterministic.dll => lib\net5.0
+  bin\Release\net5.0\Be.Vlaanderen.Basisregisters.Generators.Guid.Deterministic.pdb => lib\net5.0

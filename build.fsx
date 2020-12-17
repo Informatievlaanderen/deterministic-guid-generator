@@ -2,7 +2,7 @@
 version 6.0.0-beta8
 framework: netstandard20
 source https://api.nuget.org/v3/index.json
-nuget Be.Vlaanderen.Basisregisters.Build.Pipeline 4.2.5 //"
+nuget Be.Vlaanderen.Basisregisters.Build.Pipeline 5.0.1 //"
 
 #load "packages/Be.Vlaanderen.Basisregisters.Build.Pipeline/Content/build-generic.fsx"
 
@@ -14,14 +14,19 @@ open ``Build-generic``
 let assemblyVersionNumber = (sprintf "%s.0")
 let nugetVersionNumber = (sprintf "%s")
 
-let build = buildSolution assemblyVersionNumber
-let publish = publishSolution assemblyVersionNumber
+let buildSource = build assemblyVersionNumber
+let buildTest = buildTest assemblyVersionNumber
+let publish = publish assemblyVersionNumber
 let pack = packSolution nugetVersionNumber
 
 supportedRuntimeIdentifiers <- [ "linux-x64" ]
 
 // Library ------------------------------------------------------------------------
-Target.create "Lib_Build" (fun _ -> build "Be.Vlaanderen.Basisregisters.Generators.Guid.Deterministic")
+Target.create "Lib_Build" (fun _ ->
+  buildSource "Be.Vlaanderen.Basisregisters.Generators.Guid.Deterministic"
+  buildTest "Be.Vlaanderen.Basisregisters.Generators.Guid.Deterministic.Tests"
+)
+
 Target.create "Lib_Test" (fun _ -> [ "test" @@ "Be.Vlaanderen.Basisregisters.Generators.Guid.Deterministic.Tests" ] |> List.iter testWithDotNet)
 
 Target.create "Lib_Publish" (fun _ -> publish "Be.Vlaanderen.Basisregisters.Generators.Guid.Deterministic")
