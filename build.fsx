@@ -27,7 +27,11 @@ Target.create "Lib_Build" (fun _ ->
   buildTest "Be.Vlaanderen.Basisregisters.Generators.Guid.Deterministic.Tests"
 )
 
-Target.create "Lib_Test" (fun _ -> [ "test" @@ "Be.Vlaanderen.Basisregisters.Generators.Guid.Deterministic.Tests" ] |> List.iter testWithDotNet)
+Target.create "Lib_Test" (fun _ -> 
+  [ 
+    "test" @@ "Be.Vlaanderen.Basisregisters.Generators.Guid.Deterministic.Tests" 
+  ] |> List.iter testWithDotNet
+)
 
 Target.create "Lib_Publish" (fun _ -> publishSource "Be.Vlaanderen.Basisregisters.Generators.Guid.Deterministic")
 Target.create "Lib_Pack" (fun _ -> pack "Be.Vlaanderen.Basisregisters.Generators.Guid.Deterministic")
