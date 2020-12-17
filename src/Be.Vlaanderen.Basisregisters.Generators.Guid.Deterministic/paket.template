@@ -15,8 +15,8 @@ licenseUrl https://opensource.org/licenses/MIT
 description Create a deterministic GUID based on namespace Guid, a string and an optional version.
 
 dependencies
-  framework: netcoreapp31
+  framework: net5.0
 
 files
-  bin\Release\netcoreapp3.1\Be.Vlaanderen.Basisregisters.Generators.Guid.Deterministic.dll => lib\netcoreapp3.1
-  bin\Release\netcoreapp3.1\Be.Vlaanderen.Basisregisters.Generators.Guid.Deterministic.pdb => lib\netcoreapp3.1
+  bin\Release\net5.0\linux-x64\Be.Vlaanderen.Basisregisters.Generators.Guid.Deterministic.dll => lib\net5.0
+  bin\Release\net5.0\linux-x64\Be.Vlaanderen.Basisregisters.Generators.Guid.Deterministic.pdb => lib\net5.0
