@@ -2,7 +2,7 @@ framework: net5.0
 source https://api.nuget.org/v3/index.json
 
 // VBR STUFF
-nuget Be.Vlaanderen.Basisregisters.Build.Pipeline 5.0.1
+nuget Be.Vlaanderen.Basisregisters.Build.Pipeline 5.0.2
 
 // TEST STUFF
 nuget Microsoft.NET.Test.Sdk 16.8.3
