@@ -1,3 +1,10 @@
+## [2.2.11](https://github.com/informatievlaanderen/deterministic-guid-generator/compare/v2.2.10...v2.2.11) (2021-02-03)
+
+
+### Bug Fixes
+
+* put netcoreapp31 in nupkg, hopefully ([3bdc61c](https://github.com/informatievlaanderen/deterministic-guid-generator/commit/3bdc61c76737327603462f21b9d0e6e38a4f0e15))
+
 ## [2.2.10](https://github.com/informatievlaanderen/deterministic-guid-generator/compare/v2.2.9...v2.2.10) (2021-02-02)
 
 
