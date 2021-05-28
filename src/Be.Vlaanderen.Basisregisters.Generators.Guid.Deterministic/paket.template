@@ -5,8 +5,8 @@ id Be.Vlaanderen.Basisregisters.Generators.Guid.Deterministic
 title Be.Vlaanderen.Basisregisters.Generators.Guid.Deterministic
 
 authors Basisregisters Vlaanderen
-owners agentschap Informatie Vlaanderen <https://vlaanderen.be/informatie-vlaanderen>
-copyright Copyright (c) agentschap Informatie Vlaanderen
+owners Digitaal Vlaanderen <https://vlaanderen.be/informatie-vlaanderen>
+copyright Copyright (c) Digitaal Vlaanderen
 requireLicenseAcceptance false
 projectUrl https://github.com/Informatievlaanderen/deterministic-guid-generator
 iconUrl https://raw.githubusercontent.com/Informatievlaanderen/build-pipeline/master/logo.png
