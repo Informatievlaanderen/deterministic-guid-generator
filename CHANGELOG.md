@@ -1,3 +1,10 @@
+## [2.2.12](https://github.com/informatievlaanderen/deterministic-guid-generator/compare/v2.2.11...v2.2.12) (2021-05-28)
+
+
+### Bug Fixes
+
+* move to 5.0.6 ([cbc95c1](https://github.com/informatievlaanderen/deterministic-guid-generator/commit/cbc95c17780f5426e3f89cd0772da5135acc6c84))
+
 ## [2.2.11](https://github.com/informatievlaanderen/deterministic-guid-generator/compare/v2.2.10...v2.2.11) (2021-02-03)
 
 
