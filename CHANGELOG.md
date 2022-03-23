@@ -1,3 +1,15 @@
+# [3.0.0](https://github.com/informatievlaanderen/deterministic-guid-generator/compare/v2.2.12...v3.0.0) (2022-03-23)
+
+
+### Features
+
+* move to dotnet 6.0.3 ([f45dd95](https://github.com/informatievlaanderen/deterministic-guid-generator/commit/f45dd950ecdd708eca49fb9d80c095b8b43e34bf))
+
+
+### BREAKING CHANGES
+
+* move to dotnet 6.0.3
+
 ## [2.2.12](https://github.com/informatievlaanderen/deterministic-guid-generator/compare/v2.2.11...v2.2.12) (2021-05-28)
 
 
