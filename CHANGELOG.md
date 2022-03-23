@@ -1,3 +1,10 @@
+## [3.0.1](https://github.com/informatievlaanderen/deterministic-guid-generator/compare/v3.0.0...v3.0.1) (2022-03-23)
+
+
+### Bug Fixes
+
+* add netstandard20 build for issue [#128](https://github.com/informatievlaanderen/deterministic-guid-generator/issues/128) also add net5.0 ([b735a69](https://github.com/informatievlaanderen/deterministic-guid-generator/commit/b735a69f6b9a8a6bb7454d11c03532f02e966130))
+
 # [3.0.0](https://github.com/informatievlaanderen/deterministic-guid-generator/compare/v2.2.12...v3.0.0) (2022-03-23)
 
 
