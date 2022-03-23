@@ -1,11 +1,11 @@
-framework: net5.0, netcoreapp31
+framework: net6.0, netcoreapp31
 source https://api.nuget.org/v3/index.json
 
 // VBR STUFF
-nuget Be.Vlaanderen.Basisregisters.Build.Pipeline 5.0.3
+nuget Be.Vlaanderen.Basisregisters.Build.Pipeline 6.0.3
 
 // TEST STUFF
-nuget Microsoft.NET.Test.Sdk 16.10.0
+nuget Microsoft.NET.Test.Sdk 17.1.0
 nuget xunit 2.4.1
 nuget xunit.runner.visualstudio 2.4.3
 nuget Shouldly 4.0.3
