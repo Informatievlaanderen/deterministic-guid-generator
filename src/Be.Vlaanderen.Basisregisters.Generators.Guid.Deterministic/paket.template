@@ -16,10 +16,10 @@ description Create a deterministic GUID based on namespace Guid, a string and an
 
 dependencies
   framework: netcoreapp31
-  framework: net5.0
+  framework: net6.0
 
 files
-  bin\Release\net5.0\Be.Vlaanderen.Basisregisters.Generators.Guid.Deterministic.dll => lib\netcoreapp3.1
-  bin\Release\net5.0\Be.Vlaanderen.Basisregisters.Generators.Guid.Deterministic.pdb => lib\netcoreapp3.1
-  bin\Release\net5.0\Be.Vlaanderen.Basisregisters.Generators.Guid.Deterministic.dll => lib\net5.0
-  bin\Release\net5.0\Be.Vlaanderen.Basisregisters.Generators.Guid.Deterministic.pdb => lib\net5.0
+  bin\Release\net6.0\Be.Vlaanderen.Basisregisters.Generators.Guid.Deterministic.dll => lib\netcoreapp3.1
+  bin\Release\net6.0\Be.Vlaanderen.Basisregisters.Generators.Guid.Deterministic.pdb => lib\netcoreapp3.1
+  bin\Release\net6.0\Be.Vlaanderen.Basisregisters.Generators.Guid.Deterministic.dll => lib\net6.0
+  bin\Release\net6.0\Be.Vlaanderen.Basisregisters.Generators.Guid.Deterministic.pdb => lib\net6.0
