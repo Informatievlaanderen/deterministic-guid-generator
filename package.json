@@ -25,7 +25,7 @@
     "form-data": "4.0.0",
     "husky": "7.0.4",
     "merge": "2.1.1",
-    "semantic-release": "19.0.2",
+    "semantic-release": "19.0.3",
     "lodash": "4.17.21"
   },
   "scripts": {
