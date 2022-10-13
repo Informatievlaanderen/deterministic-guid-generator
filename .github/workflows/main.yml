@@ -51,7 +51,7 @@ jobs:
       uses: actions/setup-node@v3
 
     - name: Setup .NET Core
-      uses: actions/setup-dotnet@v2
+      uses: actions/setup-dotnet@v3.0.2
       with:
         dotnet-version: ${{ secrets.VBR_DOTNET_VERSION }}
 
