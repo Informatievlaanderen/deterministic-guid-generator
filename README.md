@@ -1,4 +1,4 @@
-# Be.Vlaanderen.Basisregisters.Generators.Deterministic [![Build Status](https://github.com/Informatievlaanderen/deterministic-guid-generator/workflows/CI/badge.svg)](https://github.com/Informatievlaanderen/deterministic-guid-generator/actions)
+# Be.Vlaanderen.Basisregisters.Generators.Deterministic [![Build Status](https://github.com/Informatievlaanderen/deterministic-guid-generator/workflows/Build/badge.svg)](https://github.com/Informatievlaanderen/deterministic-guid-generator/actions)
 
 ## Goal
 
