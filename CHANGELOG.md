@@ -1,3 +1,15 @@
+# [4.0.0](https://github.com/informatievlaanderen/deterministic-guid-generator/compare/v3.0.1...v4.0.0) (2024-03-06)
+
+
+### Features
+
+* upgrade to 8.0.2 ([5eb7662](https://github.com/informatievlaanderen/deterministic-guid-generator/commit/5eb76622d942513df32356b4e88b935abfaf4d66))
+
+
+### BREAKING CHANGES
+
+* upgrade to 8.0.2 and lib to netstandard2.1
+
 ## [3.0.1](https://github.com/informatievlaanderen/deterministic-guid-generator/compare/v3.0.0...v3.0.1) (2022-03-23)
 
 
