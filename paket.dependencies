@@ -1,14 +1,14 @@
-framework: net6.0, net5.0, netcoreapp31, netstandard20
+framework: net8.0, netstandard2.1
 source https://api.nuget.org/v3/index.json
 
 // VBR STUFF
-nuget Be.Vlaanderen.Basisregisters.Build.Pipeline 6.0.3
+nuget Be.Vlaanderen.Basisregisters.Build.Pipeline 7.0.4
 
 // TEST STUFF
-nuget Microsoft.NET.Test.Sdk 17.1.0
-nuget xunit 2.4.1
-nuget xunit.runner.visualstudio 2.4.3
-nuget Shouldly 4.0.3
+nuget Microsoft.NET.Test.Sdk 17.9.0
+nuget xunit 2.7.0
+nuget xunit.runner.visualstudio 2.5.7
+nuget Shouldly 4.2.1
 
 // BUILD STUFF
 nuget SourceLink.Embed.AllSourceFiles 2.8.3 copy_local: true
