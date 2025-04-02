@@ -63,8 +63,6 @@ var deterministicGuid = Deterministic.Create(namespaceGuid, value, version);
 
 ### Libraries
 
-* [Paket](https://fsprojects.github.io/Paket/license.html) - _A dependency manager for .NET with support for NuGet packages and Git repositories._ - [MIT](https://choosealicense.com/licenses/mit/)
-* [FAKE](https://github.com/fsharp/FAKE/blob/release/next/License.txt) - _"FAKE - F# Make" is a cross platform build automation system._ - [MIT](https://choosealicense.com/licenses/mit/)
 * [xUnit](https://github.com/xunit/xunit/blob/master/license.txt) - _xUnit.net is a free, open source, community-focused unit testing tool for the .NET Framework._ - [Apache License 2.0](https://choosealicense.com/licenses/apache-2.0/)
 * [Shouldly](https://github.com/shouldly/shouldly/blob/master/LICENSE.txt) - _Should testing for .NET - the way Asserting *Should* be!_ - [BSD](https://choosealicense.com/licenses/bsd-3-clause/)
 * [Faithlife.Utility](https://github.com/Faithlife/FaithlifeUtility/blob/master/LICENSE) - _Common .NET utility code in use at Faithlife_ - [MIT](https://choosealicense.com/licenses/mit/)
