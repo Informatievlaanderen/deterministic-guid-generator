@@ -1,3 +1,15 @@
+# [5.0.0](https://github.com/informatievlaanderen/deterministic-guid-generator/compare/v4.0.0...v5.0.0) (2025-04-04)
+
+
+### Code Refactoring
+
+* use renovate and nuget + update pipeline ([a09c22e](https://github.com/informatievlaanderen/deterministic-guid-generator/commit/a09c22e6c572a59bb9292fee0b2a5264e09bba0b))
+
+
+### BREAKING CHANGES
+
+* update to dotnet 9
+
 # [4.0.0](https://github.com/informatievlaanderen/deterministic-guid-generator/compare/v3.0.1...v4.0.0) (2024-03-06)
 
 
