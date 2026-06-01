@@ -15,14 +15,14 @@ jobs:
 
     steps:
     - name: Checkout Code
-      uses: actions/checkout@v4
+      uses: actions/checkout@v6
       with:
           persist-credentials: false
 
     - name: Setup Node.js
-      uses: actions/setup-node@v4
+      uses: actions/setup-node@v6
       with:
-        node-version: '22.x'
+        node-version: '24.x'
 
     - name: Node version
       shell: bash
@@ -63,7 +63,7 @@ jobs:
       test-project: Be.Vlaanderen.Basisregisters.Generators.Guid.Deterministic.Tests
       build-project: Be.Vlaanderen.Basisregisters.Generators.Guid.Deterministic
       semver: ${{ needs.set-release-version.outputs.version }}
-      dotnet-version: ${{ vars.VBR_DOTNET_VERSION_9 }}
+      dotnet-version: ${{ vars.VBR_DOTNET_VERSION_10 }}
       prerestore-script: ./pre-restore.sh
     secrets: inherit
 
@@ -76,12 +76,12 @@ jobs:
       version: ${{ steps.set-version.outputs.version }}
     steps:
     - name: Checkout Code
-      uses: actions/checkout@v4
+      uses: actions/checkout@v6
       with:
           persist-credentials: false
 
     - name: Cache NPM
-      uses: actions/cache@v4
+      uses: actions/cache@v5
       env:
         cache-name: cache-npm
       with:
@@ -95,12 +95,12 @@ jobs:
       shell: bash
 
     - name: Setup Node.js
-      uses: actions/setup-node@v4
+      uses: actions/setup-node@v6
       with:
-        node-version: '22.x'
+        node-version: '24.x'
 
     - name: Setup Python
-      uses: actions/setup-python@v5
+      uses: actions/setup-python@v6
       with:
         python-version: '3.x'
 
@@ -127,7 +127,7 @@ jobs:
         pip install requests markdown argparse
 
     - name: Download NuGet
-      uses: actions/download-artifact@v4
+      uses: actions/download-artifact@v8
       continue-on-error: false
       with:
         name: nuget-Be.Vlaanderen.Basisregisters.Generators.Guid.Deterministic-${{ needs.set-release-version.outputs.version }}
@@ -162,12 +162,12 @@ jobs:
 
     steps:
     - name: Checkout Code
-      uses: actions/checkout@v4
+      uses: actions/checkout@v6
 
     - name: Setup .NET Core
-      uses: actions/setup-dotnet@v4
+      uses: actions/setup-dotnet@v5
       with:
-        dotnet-version: ${{ vars.VBR_DOTNET_VERSION_9 }}
+        dotnet-version: ${{ vars.VBR_DOTNET_VERSION_10 }}
         cache: true
         cache-dependency-path: "**/packages.lock.json"
 
@@ -176,7 +176,7 @@ jobs:
       run: dotnet --info
 
     - name: Download NuGet package
-      uses: actions/download-artifact@v4
+      uses: actions/download-artifact@v8
       with:
         name: nuget-Be.Vlaanderen.Basisregisters.Generators.Guid.Deterministic-${{ needs.release.outputs.version }}
         path: ~/
@@ -189,47 +189,3 @@ jobs:
         SEMVER: ${{  needs.release.outputs.version }}
         WORKSPACE: ${{ github.workspace }}
         NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
-
-  publish_to_atlassian:
-    needs: [ release ]
-    if: ${{ (github.repository_owner == 'Informatievlaanderen') && (needs.release.outputs.version != 'none') }}
-    name: Publish to Atlassian
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout Code
-        uses: actions/checkout@v4
-
-      - name: Parse repository name
-        run: echo REPOSITORY_NAME=$(echo "$GITHUB_REPOSITORY" | awk -F / '{print $2}' | sed -e "s/:refs//") >> $GITHUB_ENV
-        shell: bash
-
-      - name: Cache Python
-        uses: actions/cache@v4
-        env:
-          cache-name: cache-pip
-        with:
-          path: ~/.cache/pip
-          key: ${{ runner.os }}-build-${{ env.cache-name }}
-
-      - name: Setup Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.x'
-
-      - name: Install Python dependencies
-        shell: bash
-        run: |
-          python -m pip install --upgrade pip
-          pip install requests markdown argparse
-
-      - name: Restore build-pipeline
-        shell: bash
-        run: ./pre-restore.sh
-
-      - name: Publish to Confluence
-        shell: bash
-        run: bash ./.build/Be.Vlaanderen.Basisregisters.Build.Pipeline/Content/ci-confluence.sh
-        env:
-          CONFLUENCE_TITLE: ${{ env.REPOSITORY_NAME }}
-          CONFLUENCE_USERNAME: ${{ secrets.VBR_CONFLUENCE_USER }}
-          CONFLUENCE_PASSWORD: ${{ secrets.VBR_CONFLUENCE_PASSWORD }}
