@@ -1,3 +1,10 @@
+# [5.1.0](https://github.com/informatievlaanderen/deterministic-guid-generator/compare/v5.0.0...v5.1.0) (2026-06-01)
+
+
+### Features
+
+* update packages ([bcb6c14](https://github.com/informatievlaanderen/deterministic-guid-generator/commit/bcb6c14b2b36300e26aacb9ca571744290083ba0))
+
 # [5.0.0](https://github.com/informatievlaanderen/deterministic-guid-generator/compare/v4.0.0...v5.0.0) (2025-04-04)
 
 
