@@ -1,12 +1,12 @@
 <Project>
   <PropertyGroup>
     <LangVersion>latest</LangVersion>
-    <TargetFramework>net9.0</TargetFramework>
+    <TargetFramework>net10.0</TargetFramework>
     <TargetLatestRuntimePatch>true</TargetLatestRuntimePatch>
 
     <RuntimeIdentifier>$(MyRuntimeIdentifier)</RuntimeIdentifier>
     <RuntimeIdentifiers>win-x64;linux-x64</RuntimeIdentifiers>
-    <RuntimeFrameworkVersion>9.0.3</RuntimeFrameworkVersion>
+    <RuntimeFrameworkVersion>10.0.8</RuntimeFrameworkVersion>
     <DisableImplicitFrameworkReferences>false</DisableImplicitFrameworkReferences>
 
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
